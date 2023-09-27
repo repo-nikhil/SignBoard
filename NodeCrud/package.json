@@ -1,0 +1,20 @@
+{
+  "name": "nodecrud",
+  "version": "1.0.0",
+  "description": "This is a node crud with mongoDb database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "Crud",
+    "MongoDb"
+  ],
+  "author": "Mr.Pranav",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.0.1"
+  }
+}
