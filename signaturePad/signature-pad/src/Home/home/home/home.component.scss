@@ -1,0 +1,226 @@
+//@import "variables"; // Import your global variables file (optional)
+
+.landing-page {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 23px;
+  max-width: 100%; /* Adjust as needed */
+
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #eee; 
+}
+
+.hero-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.hero-description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.get-started-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.get-started-btn:hover {
+  background-color: #388E3C; 
+}
+
+.features {
+  padding: 50px 0;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.feature img {
+  margin-bottom: 10px;
+  width: 80px;
+}
+
+.feature h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.feature p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #666;
+}
+
+.testimonials {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.testimonial {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #666; 
+}
+
+.author {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #666;
+  margin-right: 10px;
+}
+
+.modal {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 100px auto;
+    animation: modal-show 0.3s ease-in-out forwards;
+
+    @keyframes modal-show {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .modal-content {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+
+    .modal-title {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #aaa;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+
+    button {
+      margin-right: 5px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.modal#featuresModal {
+  .modal-header {
+    background-color: #504c50;
+    color: #fff;
+  }
+}
+
+.modal#pricingModal {
+  .modal-header {
+    background-color: #504c50;
+    color: #fff;
+  }
+  
+}
+.modal#contactModal {
+  .modal-header {
+    background-color: #504c50;
+    color: #fff;
+  }
+}

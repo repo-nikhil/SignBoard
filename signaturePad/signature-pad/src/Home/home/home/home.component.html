@@ -1,0 +1,127 @@
+
+<div class="modal fade" id="featuresModal" tabindex="-1" aria-labelledby="featuresModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="featuresModalLabel">Features</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Signature Bad empowers you to streamline your document signing process with a secure and user-friendly
+          digital signature board.</p>
+        <!-- <p>Here's a detailed description of the features offered:</p> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="pricingModal" tabindex="-1" aria-labelledby="pricingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pricingModalLabel">Pricing</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Signature Board offers flexible pricing options to suit your needs, including a free and open-source version
+          for individual or non-commercial use.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="landing-page">
+  <header class="header">
+    <h1 class="logo">Signature Board</h1>
+    <nav class="navigation">
+      <a data-bs-toggle="modal" data-bs-target="#featuresModal">Features</a>
+      <a data-bs-toggle="modal" data-bs-target="#pricingModal">Pricing</a>
+      <a data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h2 class="hero-title">Sign. Download. Secure.</h2>
+    <p class="hero-description">
+      Simplify your document signing process with our secure and easy-to-use digital signature board.
+    </p>
+    <button class="get-started-btn" (click)="onclick()">Get Started</button>
+  </main>
+
+  <section class="features">
+    <h2>Our Features</h2>
+    <ul class="feature-list">
+      <li class="feature">
+        <img src="../../../assets/images/cyber-security_4744315.png" alt="Security icon">
+        <h3>Enhanced Security</h3>
+        <p>Our platform ensures the highest level of security for your sensitive documents.</p>
+      </li>
+      <li class="feature">
+        <img src="../../../assets/images/easy-use.png" alt="Ease of use icon">
+        <h3>Simple and Easy</h3>
+        <p>Sign documents with just a few clicks, no downloads or plugins required.</p>
+      </li>
+      <li class="feature">
+        <img src="../../../assets/images/efficacy.png" alt="Efficiency icon">
+        <h3>Boost Efficiency</h3>
+        <p>Save time and resources by eliminating the need for traditional paper-based signing.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>What People Are Saying</h2>
+    <div class="testimonial">
+      <p class="quote">"This digital signature board has made signing documents so much easier and more efficient!"</p>
+      <p class="author">- Anonymous.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Made with &#x2764;&#xfe0f; By Pranav {{Year}}</p>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+  </footer>
+</div>
+@if(isLoading){{
+  <app-spinner></app-spinner>
+}}

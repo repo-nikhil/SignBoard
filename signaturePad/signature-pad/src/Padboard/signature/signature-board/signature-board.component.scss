@@ -1,0 +1,25 @@
+.signature-container {
+    text-align: center;
+    padding-top: 7%;
+    canvas {
+      border: 1px solid #a49c9c;
+      margin-bottom: 20px;
+      background-color: rgb(237, 235, 237);
+      border-radius: 3%;
+    }
+  
+    .buttons button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  
+    .buttons button:hover {
+      background-color: #f06225;
+    }
+  }
+  
