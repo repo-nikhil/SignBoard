@@ -1,0 +1,11 @@
+<div class="signature-container">
+    <canvas #canvas id="signature-pad" width="600" height="300" 
+            (mousedown)="handleMouseDown($event)"
+            (mouseup)="handleMouseUp()"
+            (mousemove)="handleMouseMove($event)">
+    </canvas>
+    <div class="buttons">
+        <button (click)="clearCanvas()">Clear</button>
+        <button (click)="saveSignature()">Save</button>
+    </div>
+  </div>
