@@ -11,6 +11,7 @@ constructor(private route: Router){ }
 Year:number = 0;
 
 ngOnInit(){
+  debugger
   let currentYear = new Date().getFullYear();
   this.Year = currentYear;
   setTimeout(() => {
